@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart - Makasu Farmers Market</title>
+  <link rel="stylesheet" href="./css/cart.css">
+</head>
+
+ <body>
+  <!-- Header -->
+  <header>
+    <h1>Makasu Farmers Market</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html#hero">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Breadcrumb Trail -->
+  <nav class="breadcrumb">
+    <a href="index.html#hero">Home</a> &gt; 
+    <a href="products.html">Products</a> &gt; 
+    <span>Cart</span>
+  </nav>
+
+  <!-- Cart Section -->
+  <section class="cart">
+    <h2>Your Shopping Cart</h2>
+    <ul id="cart-items"></ul>
+<div class="cart-summary">
+  <p id="total-price">Total: MK 0</p>
+  <p id="item-count">0 items in cart</p>
+  <button id="proceed-to-payment">Proceed to Payment</button>
+</div>
+
+<button id="clear-cart">Clear Basket</button>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="index.html#hero">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2026 Makasu Farmers Market | Powered by Local Farmers</p>
+  </footer>
+
+  <script src="./js/cart.js"></script>
+</body>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - Makasu Farmers Market</title>
+  <link rel="stylesheet" href="./css/products.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Makasu Farmers Market</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html#hero">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart <span id="cart-count">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Breadcrumb Trail -->
+<nav class="breadcrumb">
+  <a href="index.html#hero">Home</a> &gt; 
+  <span>Products</span>
+</nav>
+
+
+
+<!-- Filter Bar -->
+<section class="filter-bar">
+  <label for="category-filter">Filter by Category:</label>
+  <select id="category-filter">
+    <option value="all">All</option>
+    <option value="poultry">Poultry</option>
+    <option value="grains">Grains</option>
+    <option value="legumes">Legumes</option>
+    <option value="others">Others</option>
+  </select>
+<!--searchbar-->
+  <label for="search-bar">Search:</label>
+  <input type="text" id="search-bar" placeholder="Search products...">
+</section>
+
+<!-- Products Grid -->
+<section class="products">
+  <div class="card" data-category="poultry">
+    <img src="chicken.jpg" alt="Mikolongwe Chicken">
+    <h3>Mikolongwe Chicken</h3>
+    <p>Price: MK 8,000</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+  <div class="card" data-category="poultry">
+    <img src="eggs.jpg" alt="Farm Eggs">
+    <h3>Farm Eggs (Tray)</h3>
+    <p>Price: MK 3,500</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+  <div class="card" data-category="grains">
+    <img src="maize.jpg" alt="Maize">
+    <h3>Maize (50kg)</h3>
+    <p>Price: MK 20,000</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+  <div class="card" data-category="legumes">
+    <img src="beans.jpg" alt="Beans">
+    <h3>Beans (10kg)</h3>
+    <p>Price: MK 12,000</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</section>
+
+
+  
+  <!-- Products Grid -->
+  <section class="products">
+    <div class="card">
+      <img src="chicken.jpg" alt="Mikolongwe Chicken">
+      <h3>Mikolongwe Chicken</h3>
+      <p>Price: MK 8,000</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="eggs.jpg" alt="Farm Eggs">
+      <h3>Farm Eggs (Tray)</h3>
+      <p>Price: MK 3,500</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="maize.jpg" alt="Maize">
+      <h3>Maize (50kg)</h3>
+      <p>Price: MK 20,000</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="beans.jpg" alt="Beans">
+      <h3>Beans (10kg)</h3>
+      <p>Price: MK 12,000</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="index.html#hero">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2026 Makasu Farmers Market | Powered by Local Farmers</p>
+  </footer>
+
+  <script src="./js/products.js"></script>
+  <!-- Back to Top Button -->
+<button id="back-to-top">↑ Top</button>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Makasu Farmers Market</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <!-- Header -->
+<header>
+  <h1>Makasu Farmers Market</h1>
+  <nav>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="cart.html">Cart <span id="cart-count">0</span></a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section id="hero" class="hero">
+  <h2>Fresh Produce from Lilongwe</h2>
+  <p>Farm-to-table goodness, delivered to you.</p>
+  <button onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">Shop Now</button>
+</section>
+
+<!-- Product Cards -->
+<section id="products" class="products">
+    <section class="products">
+    <div class="card">
+      <img src="images/chicken1.jpeg" alt="Mikolongwe Chicken">
+      <h3>Mikolongwe Chicken</h3>
+      <p>Price: MK 8,000</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="images/chicken2.jpeg" alt="Farm Eggs">
+      <h3>Farm Eggs (Tray)</h3>
+      <p>Price: MK 3,500</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="images/field-img1.jpg" alt="Maize">
+      <h3>Maize (50kg)</h3>
+      <p>Price: MK 20,000</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="images/field-img2.jpg" alt="Beans">
+      <h3>Beans (10kg)</h3>
+      <p>Price: MK 12,000</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </section>
+</section>
+
+
+
+
+
+  <!-- Cart Section 
+  <section class="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <button id="checkout">Proceed to Payment</button>
+  </section>  -->
+
+  <!-- Footer -->
+<footer>
+  <nav class="footer-nav">
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+  </nav>
+  <p>&copy; 2026 Makasu Farmers Market | Powered by Local Farmers</p>
+</footer>
+
+<!-- Back to Top Button -->
+<button id="back-to-top">↑ Top</button>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - Makasu Farmers Market</title>
+  <link rel="stylesheet" href="./css/checkout.css">
+</head>
+<body>
+  <!-- Header -->
+ <header>
+  <h1>Makasu Farmers Market</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html#hero">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="cart.html">Cart <span id="cart-count">0</span></a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <!-- Breadcrumb Trail -->
+  <nav class="breadcrumb">
+    <a href="index.html#hero">Home</a> &gt; 
+    <a href="cart.html">Cart</a> &gt; 
+    <span>Checkout</span>
+  </nav>
+
+  <!-- Checkout Section -->
+
+
+
+    <form id="checkout-form">
+      <div class="payment-option">
+        <input type="radio" id="mobile-money" name="payment" value="Mobile Money" required>
+        <label for="mobile-money">📱 Mobile Money</label>
+      </div>
+
+      <div class="payment-option">
+        <input type="radio" id="cod" name="payment" value="Cash on Delivery">
+        <label for="cod">💵 Cash on Delivery</label>
+      </div>
+
+      <div class="customer-info">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="address">Delivery Address:</label>
+        <textarea id="address" required></textarea>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" required>
+      </div>
+
+             <!-- WhatsApp Order Button -->
+ 
+      <div class="checkout-buttons">
+      <button type="submit" class="btn place-order">Place Order</button>
+      <button type="button" id="send-whatsapp" class="btn whatsapp">Order via WhatsApp</button>
+    </div>
+    </form>
+
+
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="index.html#hero">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2026 Makasu Farmers Market | Powered by Local Farmers</p>
+  </footer>
+
+  <button id="back-to-top">↑ Top</button>
+  <script src="./js/checkout.js"></script>
+</body>
+</html>

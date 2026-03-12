@@ -1,0 +1,168 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f9f6;
+  color: #333;
+  margin: 0;
+}
+
+header {
+  background: #2e7d32;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.cart {
+  padding: 2rem;
+  background: #e8f5e9;
+}
+
+.cart h2 {
+  margin-bottom: 1rem;
+}
+
+#cart-items {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+#cart-items li {
+  background: white;
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.cart-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#checkout {
+  background: #1b5e20;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.breadcrumb {
+  margin: 1rem 2rem;
+  font-size: 0.95rem;
+}
+
+.breadcrumb a {
+  color: #2e7d32;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb span {
+  color: #555;
+}
+
+#proceed-to-payment {
+  background: #43a047;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+#proceed-to-payment:hover {
+  background: #2e7d32;
+}
+/* cart */
+
+#item-count {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.3rem;
+}
+
+
+
+/* Remove Button */
+.remove-btn {
+  background: #c62828;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+}
+
+.cancel-btn {
+  margin-left: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #c62828; /* Red cancel icon */
+}
+
+.cancel-btn:hover {
+  color: #b71c1c;
+}
+
+#clear-cart {
+  background: transparent;
+  color: #c62828;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+#clear-cart:hover {
+  text-decoration: underline;
+}
+/* -- footer -- */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #2e7d32;
+  color: white;
+}
+
+.footer-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
