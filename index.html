@@ -8,82 +8,74 @@
 </head>
 <body>
   <!-- Header -->
-<header>
-  <h1>Makasu Farmers Market</h1>
-  <nav>
-    <ul>
-      <li><a href="#hero">Home</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="cart.html">Cart <span id="cart-count">0</span></a></li>
-    </ul>
-  </nav>
-</header>
+  <header class="header">
+    <h1 class="logo">Makasu Farmers Market</h1>
+    <nav class="nav">
+      <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart <span id="cart-count">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
 
-<!-- Hero Section -->
-<section id="hero" class="hero">
-  <h2>Fresh Produce from Lilongwe</h2>
-  <p>Farm-to-table goodness, delivered to you.</p>
-  <button onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">Shop Now</button>
-</section>
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h2>Fresh Produce from Lilongwe</h2>
+      <p>Farm-to-table goodness, delivered to you.</p>
+      <button class="cta" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">
+        Shop Now
+      </button>
+    </div>
+  </section>
 
-<!-- Product Cards -->
-<section id="products" class="products">
-    <section class="products">
+  <!-- Product Cards -->
+  <section id="products" class="products">
     <div class="card">
-      <img src="images/rooster2.jpeg" alt="Mikolongwe Roosters">
+      <img src="images/rooster2.jpeg" alt="Mikolongwe Roosters for sale">
       <h3>Mikolongwe Roosters</h3>
       <p>Price: MK 20,000</p>
       <button class="add-to-cart">Add to Cart</button>
     </div>
 
     <div class="card">
-      <img src="images/eggs1.jpeg" alt="Farm Eggs">
+      <img src="images/eggs1.jpeg" alt="Farm Fresh Fertilized Mikolongwe Eggs Tray">
       <h3>Farm Fresh Fertilized Mikolongwe Eggs (Tray)</h3>
       <p>Price: MK 22,500</p>
       <button class="add-to-cart">Add to Cart</button>
     </div>
 
     <div class="card">
-      <img src="images/maize3 (2).jpeg" alt="Maize">
+      <img src="images/maize3 (2).jpeg" alt="Maize 50kg bag">
       <h3>Maize (50kg)</h3>
       <p>Price: MK 50,000</p>
       <button class="add-to-cart">Add to Cart</button>
     </div>
 
     <div class="card">
-      <img src="images/beans1.png" alt="Beans">
-      <h3>Beans </h3>
+      <img src="images/beans1.png" alt="Beans for sale">
+      <h3>Beans</h3>
       <p>Price: MK 8,000 / kg</p>
       <button class="add-to-cart">Add to Cart</button>
     </div>
   </section>
-</section>
-
-
-
-
-
-  <!-- Cart Section 
-  <section class="cart">
-    <h2>Your Cart</h2>
-    <ul id="cart-items"></ul>
-    <button id="checkout">Proceed to Payment</button>
-  </section>  -->
 
   <!-- Footer -->
-<footer>
-  <nav class="footer-nav">
-    <ul>
-      <li><a href="#hero">Home</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="cart.html">Cart</a></li>
-    </ul>
-  </nav>
-  <p>&copy; 2026 Makasu Farmers Market | Powered by Local Farmers</p>
-</footer>
+  <footer class="footer">
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2026 Makasu Farmers Market | Powered by Local Farmers</p>
+  </footer>
 
-<!-- Back to Top Button -->
-<button id="back-to-top">↑ Top</button>
+  <!-- Back to Top Button -->
+  <button id="back-to-top" aria-label="Back to Top">↑ Top</button>
 
   <script src="./js/script.js"></script>
 </body>

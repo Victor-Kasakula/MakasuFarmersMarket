@@ -9,34 +9,10 @@ body {
   font-family: Arial, sans-serif;
   background: #f5f9f6;
   color: #333;
+  line-height: 1.6;
 }
 
 /* Header */
-header {
-  background: #2e7d32; /* Deep green */
-  color: white;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header h1 {
-  font-size: 1.5rem;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-/* Sticky Header */
 header {
   background: #2e7d32;
   color: white;
@@ -44,9 +20,34 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;   /* makes header stick */
-  top: 0;             /* sticks at top */
-  z-index: 1000;      /* ensures it stays above other elements */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
 }
 
 /* Cart Badge */
@@ -61,30 +62,42 @@ header {
   transition: transform 0.3s ease;
 }
 
-/* Pulse animation */
 #cart-count.pulse {
   transform: scale(1.3);
 }
 
-
 /* Hero Section */
 .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 2rem;
-  background: linear-gradient(to right, #81c784, #aed581); /* Green blend */
+  padding: 3rem 1rem;
+  background: linear-gradient(to right, #81c784, #aed581);
 }
 
 .hero h2 {
   margin-bottom: 1rem;
+  font-size: 2rem;
 }
 
-.hero button {
+.hero p {
+  margin-bottom: 1.5rem;
+}
+
+.cta {
   background: #388e3c;
   color: white;
-  padding: 0.7rem 1.5rem;
+  padding: 0.8rem 1.8rem;
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.cta:hover {
+  background: #1b5e20;
 }
 
 /* Product Cards */
@@ -101,6 +114,11 @@ header {
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   text-align: center;
   padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .card img {
@@ -115,56 +133,29 @@ header {
   background: #43a047;
   color: white;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.2rem;
   cursor: pointer;
   border-radius: 5px;
+  transition: background 0.3s ease;
 }
 
-/* Cart Section */
-.cart {
-  padding: 2rem;
-  background: #e8f5e9;
+.card button:hover {
+  background: #2e7d32;
 }
 
-.cart h2 {
-  margin-bottom: 1rem;
-}
-
-#checkout {
-  background: #1b5e20;
-  color: white;
-  padding: 0.7rem 1.5rem;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-#cart-count {
-  background: #c62828; /* Red badge */
-  color: white;
-  font-weight: bold;
-  padding: 0.2rem 0.6rem;
-  border-radius: 50%;
-  margin-left: 0.3rem;
-  font-size: 0.9rem;
-}
-
-/* Smooth scroll behavior */
-html {
-  scroll-behavior: smooth;
-}
 /* Back to Top Button */
 #back-to-top {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background: #2e7d32; /* Green theme */
+  background: #2e7d32;
   color: white;
   border: none;
   padding: 0.7rem 1rem;
   border-radius: 50%;
   font-size: 1rem;
   cursor: pointer;
-  display: none; /* hidden by default */
+  display: none;
   box-shadow: 0 4px 6px rgba(0,0,0,0.2);
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
@@ -173,8 +164,6 @@ html {
   background: #1b5e20;
   transform: scale(1.1);
 }
-
-
 
 /* Footer */
 footer {
@@ -203,15 +192,49 @@ footer {
   text-decoration: underline;
 }
 
-
-/* Responsive */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-  }
-  nav ul {
-    flex-direction: column;
-    align-items: center;
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .hero h2 {
+    font-size: 1.8rem;
   }
 }
 
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .footer-nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta {
+    width: 100%;
+  }
+
+  .card img {
+    height: 150px;
+  }
+}
